@@ -3,6 +3,7 @@ import { MdOutlineArrowUpward } from "react-icons/md";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Header from "./components/Header";
 
 function App() {
   const [display, setDisplay] = useState("none");
@@ -34,7 +35,9 @@ function App() {
       >
         <MdOutlineArrowUpward size={25} />
       </Button>
-      <div className="m-4">Welcome to LIFE Foundation</div>
+      <div className="px-8">
+        <Header />
+      </div>
       <ToastContainer />
     </div>
   );

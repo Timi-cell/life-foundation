@@ -1,0 +1,19 @@
+.header {
+  button {
+    border: 2px solid #ffc034;
+    color: #ffc034;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-size: large;
+  }
+  button:hover {
+    background-color: #ffc034;
+    color: #fff;
+  }
+  button:focus {
+    color: #fff;
+    background-color: #e9af30;
+    border: 2px solid #e9af30;
+  }
+}
