@@ -1,1 +1,1 @@
-My Portfolio website built with ReactJS and Tailwind CSS
+Welcome to LIFE Foundation Project
