@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  user-select: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+#btn {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 7rem; /* Place the button at the bottom of the page */
+  right: 1rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.5rem 0;
+}
+
+.show {
+  display: block !important;
+}
+
+img {
+  object-fit: cover !important;
+}
+
+.indiana-scroll-container {
+  border-radius: 0 !important;
+}
+
+.logo > div {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
