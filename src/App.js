@@ -3,9 +3,10 @@ import { MdOutlineArrowUpward } from "react-icons/md";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "./components/Header";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   const [display, setDisplay] = useState("none");
 
   const scrollFunc = () => {
@@ -26,20 +27,22 @@ function App() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
-    <div>
-      <Button
+    <BrowserRouter>
+      {/* <Button
         size="sm"
         id="btn"
         onClick={TopFunc}
         className={display === "none" ? "" : "show"}
       >
         <MdOutlineArrowUpward size={25} />
-      </Button>
-      <div className="px-8">
-        <Header />
+      </Button> */}
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
       <ToastContainer />
-    </div>
+    </BrowserRouter>
   );
-}
+};
 export default App;

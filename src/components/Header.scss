@@ -1,19 +1,30 @@
-.header {
-  button {
-    border: 2px solid #ffc034;
-    color: #ffc034;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    font-size: large;
-  }
-  button:hover {
-    background-color: #ffc034;
-    color: #fff;
-  }
-  button:focus {
-    color: #fff;
-    background-color: #e9af30;
-    border: 2px solid #e9af30;
+@media screen and (max-width: 767px) {
+  .header {
+    .menu-content {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    .mobile-menu {
+      position: relative;
+      top: 20%;
+      width: 100%;
+      display: flex;
+      overflow-y: scroll;
+      gap: 1.5rem;
+      flex-direction: column;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
   }
 }

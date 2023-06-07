@@ -12,7 +12,11 @@
 textarea {
   resize: none;
 }
-
+h1,
+h2, h3 {
+  /* font-family: "DM Sans", sans-serif; */
+  font-weight: 700 !important;
+}
 #btn {
   display: none;
   position: fixed; /* Fixed/sticky position */
@@ -40,4 +44,22 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.group span {
+  background-color: #ffc034 !important;
+}
+
+.space-x-3 button.bg-white {
+  background-color: #ffc034 !important;
+}
+.space-x-3 button:hover {
+  background-color: #ffc034 !important;
+}
+
+@media screen and (max-width: 475px) {
+  .group span,
+  .space-x-3 button {
+    display: none !important;
+  }
 }
