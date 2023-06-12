@@ -12,29 +12,10 @@ import Pic2 from "../assets/image/pic-2.png";
 import Pic3 from "../assets/image/pic-3.png";
 import Pic4 from "../assets/image/pic-4.png";
 import Pic5 from "../assets/image/pic-5.png";
-
-const InfoBlock = ({ icon, heading, text }) => {
-  return (
-    <div className="bg-gray-100 flex flex-col items-center h-80 justify-between gap-4 p-5">
-      <img src={icon} alt={heading} />
-      <h3 className="text-base sm:text-lg md:text-xl">{heading}</h3>
-      <p className="text-base ">{text}</p>
-    </div>
-  );
-};
-
-const ImageBlock = ({ image, text }) => {
-  return (
-    <div className="w-full sm:w-1/2 lg:w-full h-full relative">
-      <img className="h-full w-full" src={image} alt={text} />
-      <div className="bg-gradient-to-t from-black h-full w-full absolute top-0">
-        <p className="absolute bottom-4 left-2/4 -translate-y-1/2 -translate-x-1/2 lg:text-lg text-sm sm:text-base mt-2 text-white">
-          {text}
-        </p>
-      </div>
-    </div>
-  );
-};
+import { BlogBlock, ImageBlock, InfoBlock } from "../components/Blocks";
+import Footer from "../components/Footer";
+import NewsLetter from "../components/NewsLetter";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -42,7 +23,7 @@ const Home = () => {
       <Header />
       <Slider />
       {/* Who we are */}
-      <div className="flex px-8 flex-col lg:flex-row justify-between mt-9 gap-8 lg:gap-40">
+      <section className="flex px-4 md:px-8 flex-col lg:flex-row justify-between mt-9 gap-8 lg:gap-40">
         <div>
           <h2 className="text-xl sm:text-2xl md:text-3xl">Who we are</h2>
           <p className="mt-5 leading-7 lg:text-lg text-sm sm:text-base">
@@ -54,14 +35,16 @@ const Home = () => {
             upward mobility in society. In summary, we aim to assist people to
             live in the full expression of their destinies.
           </p>
-          <button className="p-3 mt-5 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
-            Learn More
-          </button>
+          <Link to="/about-us">
+            <button className="p-3 mt-5 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
+              Learn More
+            </button>
+          </Link>
         </div>
-        <img src={Pic1} alt="pic-1" />
-      </div>
+        <img src={Pic1} alt="pic-1" className="w-full h-full" />
+      </section>
       {/* What we do */}
-      <div className="text-center mt-12 px-8">
+      <section className="text-center mt-12 px-4 md:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl">What we do</h2>
         <p className="lg:text-lg text-sm sm:text-base mt-2 text-gray-600">
           How we are able to help individuals in need
@@ -110,9 +93,9 @@ const Home = () => {
             }
           />
         </div>
-      </div>
+      </section>
       {/* Our core values */}
-      <div className="text-center mt-12 px-8">
+      <section className="text-center mt-12 px-4 md:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl">Our Core Values</h2>
         <p className="lg:text-lg text-sm sm:text-base mt-2 text-gray-600">
           Our core values and work are anchored on these three(3) areas.
@@ -122,9 +105,9 @@ const Home = () => {
           <ImageBlock image={Pic3} text={"Shinning the Gospel"} />
           <ImageBlock image={Pic4} text={"Building core skills"} />
         </div>
-      </div>
+      </section>
       {/* Outreach report */}
-      <div className="flex px-8 lg:items-center sm:items-start flex-col lg:flex-row justify-between mt-20 gap-8 lg:gap-40">
+      <section className="flex px-4 md:px-8 lg:items-center sm:items-start flex-col lg:flex-row justify-between mt-20 gap-8 lg:gap-40">
         <div>
           <h2 className="text-xl sm:text-2xl lg:text-left md:text-3xl text-center">
             2022 Outreach Report
@@ -152,9 +135,48 @@ const Home = () => {
           </button>
         </div>
         <img src={Pic5} alt="pic-1" className="w-full h-full" />
-      </div>
+      </section>
       {/* Read our blog */}
-      
+      <section className="text-center mt-20 px-4 md:px-8">
+        <h2 className="text-xl sm:text-2xl md:text-3xl">Read our blog</h2>
+        <p className="lg:text-lg text-sm sm:text-base mt-2 text-gray-600">
+          Get updates from events and read inspiring stories from people we have
+          engaged with.
+        </p>
+        <div className="flex flex-col justify-between-items-center">
+          <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 mt-6">
+            <BlogBlock
+              date={"8th April"}
+              heading={"Empowering the youths"}
+              text={
+                "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+              }
+            />
+            <BlogBlock
+              date={"15th April"}
+              heading={"The focal point of a greater Nigeria"}
+              text={
+                "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+              }
+            />
+            <BlogBlock
+              date={"22nd April"}
+              heading={"Hope in action, we keep inspiring"}
+              text={
+                "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals..."
+              }
+            />
+          </div>
+        </div>
+        <Link to="/blog">
+          <button className="p-3 mt-20 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
+            View our blog articles
+          </button>
+        </Link>
+      </section>
+      {/* Sign up to our newsletter */}
+      <NewsLetter />
+      <Footer />
     </div>
   );
 };

@@ -8,23 +8,18 @@
   user-select: none;
   font-family: "DM Sans", sans-serif;
 }
-
+.active {
+  color: #f7aa04 !important;
+}
 textarea {
   resize: none;
 }
 h1,
-h2, h3 {
+h2,
+h3,
+h4 {
   /* font-family: "DM Sans", sans-serif; */
   font-weight: 700 !important;
-}
-#btn {
-  display: none;
-  position: fixed; /* Fixed/sticky position */
-  bottom: 7rem; /* Place the button at the bottom of the page */
-  right: 1rem; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0.5rem 0;
 }
 
 .show {
@@ -39,13 +34,6 @@ img {
   border-radius: 0 !important;
 }
 
-.logo > div {
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .group span {
   background-color: #ffc034 !important;
 }
@@ -57,6 +45,10 @@ img {
   background-color: #ffc034 !important;
 }
 
+.footer-text p {
+  margin-top: 1rem;
+  cursor: pointer;
+}
 @media screen and (max-width: 475px) {
   .group span,
   .space-x-3 button {

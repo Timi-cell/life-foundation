@@ -27,7 +27,7 @@ const ImageText = ({ imgAlt, imgSrc, heading, text1, text2 }) => {
 
 const Slider = () => {
   return (
-    <div className="md:h-96 lg:h-[32rem] h-80 slider text-white overflow-hidden">
+    <section className="md:h-96 lg:h-[32rem] h-80 slider text-white overflow-hidden">
       <Carousel slideInterval={3000}>
         <ImageText
           imgAlt="block-1"
@@ -66,7 +66,7 @@ const Slider = () => {
           text2={"Join us in making a difference today!"}
         />
       </Carousel>
-    </div>
+    </section>
   );
 };
 

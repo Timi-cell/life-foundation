@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media screen and (max-width: 885px) {
+  .footer {
+    .logo-text {
+      width: 100% !important;
+    }
+
+    flex-direction: column !important;
+  }
+}
