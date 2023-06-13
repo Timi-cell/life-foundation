@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blog from "./pages/Blog";
+import GetInvolved from "./pages/GetInvolved";
+import GetInvolvedForm from "./pages/GetInvolvedForm";
 
 const App = () => {
   const [display, setDisplay] = useState("none");
@@ -42,6 +44,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/get-involved" element={<GetInvolved />} />
+          <Route path="/get-involved-form" element={<GetInvolvedForm />} />
         </Routes>
       </div>
       <ToastContainer />

@@ -9,15 +9,18 @@ import {
 } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import "../scss/Navigate.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="bg-gray-300 mt-20 px-4 py-8 md:px-8">
+    <section className="bg-gray-300 px-4 py-8 md:px-8">
       <div className="flex flex-row footer justify-between gap-8 items-start">
         <div className="md:w-1/3 logo-text">
-          <div className="w-28">
-            <img src={Logo} alt="Life Foundation Logo" />
-          </div>
+          <Link to="/">
+            <div className="w-28">
+              <img src={Logo} alt="Life Foundation Logo" />
+            </div>
+          </Link>
           <p className="text-base mt-3">
             Living in Full Expression (LIFE) foundation aims to provide hope to
             the hopeless, the less privileged and the downtrodden in society.

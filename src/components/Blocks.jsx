@@ -23,9 +23,9 @@ export const ImageBlock = ({ image, text }) => {
 
 export const BlogBlock = ({ image, date, heading, text }) => {
   return (
-    <div className="relative flex flex-col justify-between items-start gap-8 text-left w-full rounded-lg overflow-hidden border-gray-300 border border-">
+    <div className="relative flex flex-col justify-between items-start gap-4 md:gap-8 text-left w-full rounded-lg overflow-hidden border-gray-300 border border-">
       <div className="h-80 bg-gray-300 w-full">
-        {/* <img src={image} alt={heading} className="w-full h-full" /> */}
+       {image ? <img src={image} alt={heading} className="w-full h-full" /> : ""}
       </div>
       <p className="absolute lg:text-sm text-xs top-4 left-4 bg-blue-700 text-white p-2 rounded-lg">
         {date}

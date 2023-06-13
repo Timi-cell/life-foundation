@@ -4,7 +4,7 @@ import Pic10 from "../assets/image/pic-10.png";
 
 const NewsLetter = () => {
   return (
-    <section className="mt-20 mx-0 md:mx-8 h-full md:h-128 bg-blue-800 flex flex-col-reverse md:flex-row justify-between items-center md:gap-4 gap-0 text-white">
+    <section className="mt-10 md:mt-20 h-full md:h-128 bg-blue-800 flex flex-col-reverse md:flex-row justify-between items-center md:gap-4 gap-0 text-white">
       <div className="px-5 md:px-8 py-8 md:py-0 md:w-1/2 w-full">
         <h2 className="text-2xl sm:text-3xl md:text-4xl">
           Sign up to our Newsletter

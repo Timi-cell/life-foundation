@@ -4,6 +4,7 @@ import Two from "../assets/image/pic-7.png";
 import Three from "../assets/image/pic-8.png";
 import Four from "../assets/image/pic-9.png";
 import { Carousel } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 const ImageText = ({ imgAlt, imgSrc, heading, text1, text2 }) => {
   return (
@@ -17,9 +18,11 @@ const ImageText = ({ imgAlt, imgSrc, heading, text1, text2 }) => {
           <p>{text1}</p>
           <p>{text2}</p>
         </div>
-        <button className="p-3 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400 hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
-          Get Involved
-        </button>
+        <Link to="/get-involved">
+          <button className="p-3 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400 hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
+            Get Involved
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
 import Pic15 from "../assets/image/pic-15.png";
 import Pic16 from "../assets/image/pic-16.png";
+import Pic18 from "../assets/image/pic-18.png";
+import Pic19 from "../assets/image/pic-19.png";
+import Pic20 from "../assets/image/pic-20.png";
+import Pic26 from "../assets/image/pic-26.png";
+import Pic27 from "../assets/image/pic-27.png";
 import { BlogBlock } from "../components/Blocks";
+import Banner from "../components/Banner";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Header />
       {/* Banner */}
-      <section className="relative">
-        <div className="w-full h-60 md:h-full">
-          <img src={Pic15} alt="blog pic" className="w-full h-full" />
-        </div>
-        <h1 className="text-2xl absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-2/4 text-center text-white sm:text-3xl md:text-5xl">
-          BLOG
-        </h1>
-      </section>
+      <Banner image={Pic15} text={"BLOG"} />
       {/* Latest blog articles */}
       <section className="px-4 md:px-8 mt-10 md:mt-20">
         <h2 className="mt-4 text-xl md:text-2xl lg:text-3xl">
@@ -55,46 +57,51 @@ const Blog = () => {
       {/* Blogs list */}
       <section className="grid mt-10 md:mt-20 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 lg:grid-rows-2 lg:grid-cols-3 gap-x-4 gap-y-6 px-4 md:px-8">
         <BlogBlock
-          date={"22nd April"}
+          date={"8th April"}
           heading={"Empowering the youths"}
+          text={
+            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+          }
+          image={Pic18}
+        />
+        <BlogBlock
+          date={"15th April"}
+          heading={"The focal point of a greater Nigeria"}
+          text={
+            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+          }
+          image={Pic19}
+        />
+        <BlogBlock
+          date={"22nd April"}
+          heading={"Hope in action, we keep inspiring"}
+          text={
+            "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals..."
+          }
+          image={Pic20}
+        />
+        <BlogBlock
+          date={"22nd April"}
+          heading={"The roles of Non-profits in Education"}
+          text={
+            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+          }
+          image={Pic26}
+        />
+        <BlogBlock
+          date={"22nd April"}
+          heading={"Advocating for disability rights"}
           text={
             "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
           }
         />
         <BlogBlock
           date={"22nd April"}
-          heading={"Empowering the youths"}
+          heading={"The importance of volunteering"}
           text={
             "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
           }
-        />
-        <BlogBlock
-          date={"22nd April"}
-          heading={"Empowering the youths"}
-          text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
-          }
-        />
-        <BlogBlock
-          date={"22nd April"}
-          heading={"Empowering the youths"}
-          text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
-          }
-        />
-        <BlogBlock
-          date={"22nd April"}
-          heading={"Empowering the youths"}
-          text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
-          }
-        />
-        <BlogBlock
-          date={"22nd April"}
-          heading={"Empowering the youths"}
-          text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
-          }
+          image={Pic27}
         />
       </section>
       <NewsLetter />

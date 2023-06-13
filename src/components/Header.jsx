@@ -3,7 +3,7 @@ import Logo from "../assets/svg/life-logo.svg";
 import "../scss/Navigate.scss";
 import Menu from "../assets/svg/menu.svg";
 import CloseMenu from "../assets/svg/cancel.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const activeLink = ({ isActive }) => (isActive ? "active" : "");
 
@@ -26,9 +26,11 @@ const Header = () => {
   };
   return (
     <section className="py-4 px-4 md:px-8 flex flex-row justify-between lg:gap-4 items-center header">
-      <div className="w-24">
-        <img src={Logo} alt="Life Foundation Logo" />
-      </div>
+      <Link to="/">
+        <div className="w-24">
+          <img src={Logo} alt="Life Foundation Logo" />
+        </div>
+      </Link>
       <div className="block md:hidden cursor-pointer" onClick={showMenu}>
         <img src={Menu} alt="menu-icon" />
       </div>

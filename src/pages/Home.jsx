@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Slider from "../components/Slider";
 import Pic1 from "../assets/image/pic-1.png";
@@ -12,12 +12,18 @@ import Pic2 from "../assets/image/pic-2.png";
 import Pic3 from "../assets/image/pic-3.png";
 import Pic4 from "../assets/image/pic-4.png";
 import Pic5 from "../assets/image/pic-5.png";
+import Pic18 from "../assets/image/pic-18.png";
+import Pic19 from "../assets/image/pic-19.png";
+import Pic20 from "../assets/image/pic-20.png";
 import { BlogBlock, ImageBlock, InfoBlock } from "../components/Blocks";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div>
       <Header />
@@ -151,6 +157,7 @@ const Home = () => {
               text={
                 "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
               }
+              image={Pic18}
             />
             <BlogBlock
               date={"15th April"}
@@ -158,6 +165,7 @@ const Home = () => {
               text={
                 "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
               }
+              image={Pic19}
             />
             <BlogBlock
               date={"22nd April"}
@@ -165,6 +173,7 @@ const Home = () => {
               text={
                 "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals..."
               }
+              image={Pic20}
             />
           </div>
         </div>
