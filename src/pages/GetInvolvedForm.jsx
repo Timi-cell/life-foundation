@@ -27,7 +27,8 @@ const GetInvolvedForm = () => {
             <input
               type="text"
               id="name"
-              className="w-full md:w-1/2 block mt-4 rounded-lg"
+              placeholder="Name"
+              className="w-full md:w-1/2 block mt-4 rounded-lg placeholder:text-gray-600"
               required
             />
           </div>
@@ -37,8 +38,8 @@ const GetInvolvedForm = () => {
             </label>
             <input
               type="email"
-              id="email"
-              className="w-full md:w-1/2 block mt-4 rounded-lg"
+              id="email" placeholder="Email"
+              className="w-full md:w-1/2 block mt-4 rounded-lg placeholder:text-gray-600"
               required
             />
           </div>
@@ -48,8 +49,8 @@ const GetInvolvedForm = () => {
             </label>
             <input
               type="text"
-              id="address"
-              className="w-full md:w-1/2 block mt-4 rounded-lg"
+              id="address" placeholder="Address"
+              className="w-full md:w-1/2 block mt-4 rounded-lg placeholder:text-gray-600"
               required
             />
           </div>
