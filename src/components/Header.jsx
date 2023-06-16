@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/svg/life-logo.svg";
+import Logo from "../assets/image/logo.png";
 import "../scss/Navigate.scss";
 import Menu from "../assets/svg/menu.svg";
 import CloseMenu from "../assets/svg/cancel.svg";
@@ -25,7 +25,7 @@ const Header = () => {
     document.getElementById("menu").style.height = "0%";
   };
   return (
-    <section className="py-4 px-4 md:px-8 flex flex-row justify-between lg:gap-4 items-center header">
+    <header className="py-4 px-4 md:px-8 flex flex-row justify-between lg:gap-4 items-center header">
       <Link to="/">
         <div className="w-24">
           <img src={Logo} alt="Life Foundation Logo" />
@@ -55,7 +55,7 @@ const Header = () => {
       <button className="md:block lg:text-lg text-sm sm:text-base hidden p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white focus:border-yellow-400">
         Donate Today
       </button>
-    </section>
+    </header>
   );
 };
 

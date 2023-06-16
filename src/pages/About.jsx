@@ -25,7 +25,7 @@ const About = () => {
       window.scrollTo(0, 0);
     }, []);
   return (
-    <div>
+    <>
       <Header />
       {/* Banner */}
       <section className="relative">
@@ -122,7 +122,7 @@ const About = () => {
       </section>
       <NewsLetter />
       <Footer />
-    </div>
+    </>
   );
 };
 

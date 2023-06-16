@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/get-involved" element={<GetInvolved />} />
-          <Route path="/get-involved-form" element={<GetInvolvedForm />} />
+          <Route path="/get-involved/form" element={<GetInvolvedForm />} />
         </Routes>
       </div>
       <ToastContainer />

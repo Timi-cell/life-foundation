@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/svg/life-logo.svg";
+import Logo from "../assets/image/logo.png";
 import {
   BsFillTelephoneFill,
   BsFacebook,
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="bg-gray-300 px-4 py-8 md:px-8">
+    <footer className="bg-gray-300 px-4 py-8 md:px-8">
       <div className="flex flex-row footer justify-between gap-8 items-start">
         <div className="md:w-1/3 logo-text">
           <Link to="/">
@@ -62,7 +62,7 @@ const Footer = () => {
       <p className="text-base mt-16 text-center">
         Copyright &copy; 2023 All rights reserved | LIFE Foundation
       </p>
-    </section>
+    </footer>
   );
 };
 

@@ -30,7 +30,7 @@ const GetInvolved = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <>
       <Header />
       {/* Banner */}
       <Banner image={Pic17} text={"GET INVOLVED"} />
@@ -68,7 +68,7 @@ const GetInvolved = () => {
             To show interest, fill the form and get involved today in our
             mission of saving lives.
           </h2>
-          <Link to="/get-involved-form">
+          <Link to="/get-involved/form">
             <button className="lg:text-lg mt-5  text-sm sm:text-base p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white focus:border-yellow-400">
               Fill the Form
             </button>
@@ -77,7 +77,7 @@ const GetInvolved = () => {
       </section>
       <NewsLetter />
       <Footer />
-    </div>
+    </>
   );
 };
 

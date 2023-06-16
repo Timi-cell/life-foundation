@@ -17,7 +17,7 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <>
       <Header />
       {/* Banner */}
       <Banner image={Pic15} text={"BLOG"} />
@@ -106,7 +106,7 @@ const Blog = () => {
       </section>
       <NewsLetter />
       <Footer />
-    </div>
+    </>
   );
 };
 

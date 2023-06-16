@@ -25,7 +25,7 @@ const Home = () => {
         window.scrollTo(0, 0);
       }, []);
   return (
-    <div>
+    <main>
       <Header />
       <Slider />
       {/* Who we are */}
@@ -47,7 +47,11 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <img src={Pic1} alt="pic-1" className="w-full h-full" />
+        <img
+          src={Pic1}
+          alt="pic-1"
+          className="w-full h-full"
+        />
       </section>
       {/* What we do */}
       <section className="text-center mt-12 px-4 md:px-8">
@@ -186,7 +190,7 @@ const Home = () => {
       {/* Sign up to our newsletter */}
       <NewsLetter />
       <Footer />
-    </div>
+    </main>
   );
 };
 
