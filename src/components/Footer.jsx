@@ -36,12 +36,12 @@ const Footer = () => {
           </div>
           <div>
             <h4>Contact</h4>
-            <div className="flex flex-row mt-4 gap-2 items-start">
+            <div className="flex flex-row mt-4 gap-2 items-center flex-wrap">
               <BsFillTelephoneFill size={20} color="#02319D" />{" "}
               <a href="tel:07067844491">07067844491</a>,{" "}
               <a href="tel:09031988861">09031988861</a>
             </div>
-            <div className="flex mt-4 flex-row gap-2 items-start">
+            <div className="flex mt-4 flex-row gap-2 items-center flex-wrap">
               <GrMail size={20} color="#02319D" />
               <a href="mailto:Livinginfullexpression1@gmail.com">
                 Livinginfullexpression1@gmail.com

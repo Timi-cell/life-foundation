@@ -55,3 +55,19 @@ export const BlogBlock = ({ image, date, heading, text }) => {
     </div>
   );
 };
+
+export const FlexBlock = ({ image, heading, text, reverse }) => {
+  return (
+    <div
+      className={`flex ${reverse ? "flex-col-reverse" : "flex-col"} ${
+        reverse ? `md:flex-row-reverse` : "md:flex-row"
+      } items-start md:items-center gap-4 md:gap-8 mt-10 md:mt-20`}
+    >
+      <div className="md:w-1/2 w-full">
+        <h2 className="text-2xl md:text-3xl">{heading}</h2>
+        <p className="mt-5 leading-7 lg:text-lg text-sm sm:text-base">{text}</p>
+      </div>
+      <img src={image} alt={heading} className="md:w-1/2 w-full h-full" />
+    </div>
+  );
+};

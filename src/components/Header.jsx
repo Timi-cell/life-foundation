@@ -47,14 +47,18 @@ const Header = () => {
           <Links to="/projects" title={"Our Projects"} />
           <Links to="/blog" title={"Blog"} />
           <Links to="/contact-us" title={"Contact us"} />
-          <button className="block lg:text-lg text-sm sm:text-base md:hidden p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white">
-            Donate Today
-          </button>
+          <Link to="/donate">
+            <button className="block lg:text-lg text-sm sm:text-base md:hidden p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white">
+              Donate Today
+            </button>
+          </Link>
         </ul>
       </div>
-      <button className="md:block lg:text-lg text-sm sm:text-base hidden p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white focus:border-yellow-400">
-        Donate Today
-      </button>
+      <Link to="/donate" className="md:block hidden">
+        <button className="lg:text-lg text-sm sm:text-base p-2.5 text-yellow-300 border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:text-white hover:bg-yellow-300 focus:bg-yellow-400 focus:text-white focus:border-yellow-400">
+          Donate Today
+        </button>
+      </Link>
     </header>
   );
 };

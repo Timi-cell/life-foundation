@@ -34,11 +34,12 @@ const GetInvolvedForm = () => {
           </div>
           <div className="mt-4">
             <label htmlFor="email">
-              Email Address <sup>*</sup>
+              E-mail Address <sup>*</sup>
             </label>
             <input
               type="email"
-              id="email" placeholder="Email"
+              id="email"
+              placeholder="Email"
               className="w-full md:w-1/2 block mt-4 rounded-lg placeholder:text-gray-600"
               required
             />
@@ -49,7 +50,8 @@ const GetInvolvedForm = () => {
             </label>
             <input
               type="text"
-              id="address" placeholder="Address"
+              id="address"
+              placeholder="Address"
               className="w-full md:w-1/2 block mt-4 rounded-lg placeholder:text-gray-600"
               required
             />
@@ -77,11 +79,11 @@ const GetInvolvedForm = () => {
           <div className="flex flex-row gap-4 justify-start mt-4 items-center flex-wrap">
             <div className="flex flex-row gap-2 justify-start items-center">
               <label htmlFor="vol">Volunteer</label>
-              <input type="checkbox" id="vol" className="accent-yellow-300" />
+              <input type="checkbox" id="vol" />
             </div>
             <div className="flex flex-row gap-2 justify-start items-center">
               <label htmlFor="part">Partner with us</label>
-              <input type="checkbox" id="part" className="accent-yellow-300" />
+              <input type="checkbox" id="part" />
             </div>
             <p className="cursor-pointer underline">Donate today</p>
           </div>

@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blog from "./pages/Blog";
 import GetInvolved from "./pages/GetInvolved";
 import GetInvolvedForm from "./pages/GetInvolvedForm";
+import Contact from "./pages/Contact";
+import Donate from "./pages/Donate";
 
 const App = () => {
   const [display, setDisplay] = useState("none");
@@ -44,8 +46,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/get-involved/form" element={<GetInvolvedForm />} />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
       </div>
       <ToastContainer />
