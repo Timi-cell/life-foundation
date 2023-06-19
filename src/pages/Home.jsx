@@ -47,11 +47,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <img
-          src={Pic1}
-          alt="pic-1"
-          className="w-full h-full"
-        />
+        <img src={Pic1} alt="pic-1" className="w-full h-full" />
       </section>
       {/* What we do */}
       <section className="text-center mt-12 px-4 md:px-8">
@@ -156,26 +152,26 @@ const Home = () => {
         <div className="flex flex-col justify-between-items-center">
           <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 mt-6">
             <BlogBlock
-              date={"8th April"}
-              heading={"Empowering the youths"}
+              date={"2nd April"}
+              heading={"Empowering the young generation"}
               text={
-                "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+                "Giving the young people a platform to build their intellect and skills, and building them ready for a higher level. So far, we have begun 2 cohorts in..."
               }
               image={Pic18}
             />
             <BlogBlock
-              date={"15th April"}
-              heading={"The focal point of a greater Nigeria"}
+              date={"9th April"}
+              heading={"Join our mission to change lives"}
               text={
-                "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+                "We believe we have the extraordinary power to transform lives, as we tirelessly work towards providing support, and empowering individuals in need..."
               }
               image={Pic19}
             />
             <BlogBlock
-              date={"22nd April"}
+              date={"16th April"}
               heading={"Hope in action, we keep inspiring"}
               text={
-                "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals..."
+                "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals and communities..."
               }
               image={Pic20}
             />

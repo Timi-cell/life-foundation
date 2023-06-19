@@ -5,7 +5,7 @@ import NewsLetter from "../components/NewsLetter";
 import Pic17 from "../assets/image/pic-17.png";
 import Pic21 from "../assets/image/pic-21.png";
 import Pic22 from "../assets/image/pic-22.png";
-import Pic23 from "../assets/image/pic-23.png";
+import Pic30 from "../assets/image/pic-30.png";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { FlexBlock } from "../components/Blocks";
@@ -39,7 +39,7 @@ const GetInvolved = () => {
           reverse={true}
         />
         <FlexBlock
-          image={Pic23}
+          image={Pic30}
           heading={"Partner with us"}
           text={
             "We believe that collaboration is key to making a lasting impact in the world. We welcome partnerships with individuals, corporations, and other organizations who share our commitment to creating positive change. As a partner, you will be recognized for your contribution and have the satisfaction of knowing that you are making a difference in the lives of those in need."

@@ -32,7 +32,9 @@ h4 {
 .show {
   display: block !important;
 }
-
+.infoblock:hover img{
+  filter: brightness(0) invert(1) !important;
+}
 img {
   object-fit: cover !important;
 }

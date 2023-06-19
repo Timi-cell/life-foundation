@@ -1,6 +1,6 @@
 export const InfoBlock = ({ icon, heading, text }) => {
   return (
-    <div className="bg-gray-100 flex flex-col items-center h-80 justify-between gap-4 p-5">
+    <div className="bg-gray-100 hover:text-white infoblock hover:bg-yellow-300 flex flex-col items-center h-80 justify-between gap-4 p-5">
       <img src={icon} alt={heading} />
       <h3 className="text-base sm:text-lg md:text-xl">{heading}</h3>
       <p className="text-base">{text}</p>

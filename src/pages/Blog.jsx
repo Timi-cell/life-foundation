@@ -8,7 +8,8 @@ import Pic18 from "../assets/image/pic-18.png";
 import Pic19 from "../assets/image/pic-19.png";
 import Pic20 from "../assets/image/pic-20.png";
 import Pic26 from "../assets/image/pic-26.png";
-import Pic27 from "../assets/image/pic-27.png";
+import Pic28 from "../assets/image/pic-28.png";
+import Pic29 from "../assets/image/pic-29.png";
 import { BlogBlock } from "../components/Blocks";
 import Banner from "../components/Banner";
 
@@ -34,7 +35,7 @@ const Blog = () => {
           />
           <div className="w-full md:w-1/2">
             <div className="flex flex-row justify-start items-center gap-2">
-              <button className="p-2 text-base bg-yellow-400 text-white rounded-md">
+              <button className="p-2 text-base bg-blue-700 text-white rounded-md">
                 Education
               </button>
               <p className="text-gray-600">•</p>
@@ -57,51 +58,52 @@ const Blog = () => {
       {/* Blogs list */}
       <section className="grid mt-10 md:mt-20 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 lg:grid-rows-2 lg:grid-cols-3 gap-x-4 gap-y-6 px-4 md:px-8">
         <BlogBlock
-          date={"8th April"}
-          heading={"Empowering the youths"}
+          date={"2nd April"}
+          heading={"Empowering the young generation"}
           text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+            "Giving the young people a platform to build their intellect and skills, and building them ready for a higher level. So far, we have begun 2 cohorts in..."
           }
           image={Pic18}
         />
         <BlogBlock
-          date={"15th April"}
-          heading={"The focal point of a greater Nigeria"}
+          date={"9th April"}
+          heading={"Join our mission to change lives"}
           text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+            "We believe we have the extraordinary power to transform lives, as we tirelessly work towards providing support, and empowering individuals in need..."
           }
           image={Pic19}
         />
         <BlogBlock
-          date={"22nd April"}
+          date={"16th April"}
           heading={"Hope in action, we keep inspiring"}
           text={
-            "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals..."
+            "Hope is a powerful force that can change lives, even in the most challenging of circumstances. For less privileged individuals and communities..."
           }
           image={Pic20}
         />
         <BlogBlock
-          date={"22nd April"}
+          date={"23rd April"}
           heading={"The roles of Non-profits in Education"}
           text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+            "Through innovative approaches, nonprofits provide invaluable support, resources, ensuring that no one is left behind in the pursuit of education..."
           }
           image={Pic26}
         />
         <BlogBlock
-          date={"22nd April"}
+          date={"30th April"}
           heading={"Advocating for disability rights"}
           text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+            "By championing the rights of disabled persons, we can break down barriers, defeat stereotypes, create a world where all has access to education, healthcare and..."
           }
+          image={Pic28}
         />
         <BlogBlock
-          date={"22nd April"}
+          date={"11th May"}
           heading={"The importance of volunteering"}
           text={
-            "Giving the youth a platform to build their skills, and building them ready for the labour market. So far, we have begun 2 cohorts in the northern regions of Nigeria."
+            "Volunteering in NGO’s is a vital force that fuels their mission, as dedicated individuals contribute their time, skills, and passion to address societal needs..."
           }
-          image={Pic27}
+          image={Pic29}
         />
       </section>
       <NewsLetter />
