@@ -1,6 +1,6 @@
 export const InfoBlock = ({ icon, heading, text }) => {
   return (
-    <div className="bg-gray-100 hover:text-white infoblock hover:bg-yellow-300 flex flex-col items-center h-80 justify-between gap-4 p-5">
+    <div className="bg-gray-100 rounded-md hover:text-white infoblock hover:bg-yellow-300 transition-all delay-100 ease-in flex flex-col items-center h-full justify-between gap-4 p-5">
       <img src={icon} alt={heading} />
       <h3 className="text-base sm:text-lg md:text-xl">{heading}</h3>
       <p className="text-base">{text}</p>
@@ -8,14 +8,15 @@ export const InfoBlock = ({ icon, heading, text }) => {
   );
 };
 
-export const ImageBlock = ({ image, text }) => {
+export const ImageBlock = ({ image, heading, text }) => {
   return (
     <div className="w-full sm:w-1/2 lg:w-full h-full relative">
-      <img className="h-full w-full" src={image} alt={text} />
+      <img className="h-full w-full" src={image} alt={heading} />
       <div className="bg-gradient-to-t from-black h-full w-full absolute top-0">
-        <p className="absolute bottom-4 left-2/4 -translate-y-1/2 -translate-x-1/2 lg:text-lg text-sm sm:text-base mt-2 text-white">
-          {text}
-        </p>
+        <div className="absolute bottom-2 left-2/4 -translate-y-1/2 -translate-x-1/2 mt-2 text-white w-full px-4">
+          <h3 className="lg:text-lg text-sm sm:text-base">{heading}</h3>
+          <p className="mt-2 text-base">{text}</p>
+        </div>
       </div>
     </div>
   );

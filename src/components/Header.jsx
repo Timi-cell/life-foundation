@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/image/logo.png";
-import "../scss/Navigate.scss";
+import "../scss/styles.scss";
 import Menu from "../assets/svg/menu.svg";
 import CloseMenu from "../assets/svg/cancel.svg";
 import { Link, NavLink } from "react-router-dom";
@@ -9,7 +9,7 @@ const activeLink = ({ isActive }) => (isActive ? "active" : "");
 
 const Links = ({ to, title }) => {
   return (
-    <NavLink to={to} className={activeLink}>
+    <NavLink to={to} className={`${activeLink} hover:text-yellow-300`}>
       <li>{title}</li>
     </NavLink>
   );
@@ -25,7 +25,7 @@ const Header = () => {
     document.getElementById("menu").style.height = "0%";
   };
   return (
-    <header className="py-4 px-4 md:px-8 flex flex-row justify-between lg:gap-4 items-center header">
+    <header className="bg-white py-4 fixed w-full z-20 top-0 left-0 px-4 md:px-8 flex flex-row justify-between lg:gap-4 items-center header">
       <Link to="/">
         <div className="w-24">
           <img src={Logo} alt="Life Foundation Logo" />
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="block md:hidden cursor-pointer" onClick={showMenu}>
         <img src={Menu} alt="menu-icon" />
       </div>
-      <div className="menu-content" id="menu">
+      <div className="menu-content" id="menu" onClick={closeNav}>
         <div
           className="md:hidden block close cursor-pointer"
           onClick={closeNav}
@@ -43,8 +43,8 @@ const Header = () => {
         </div>
         <ul className="md:flex mobile-menu flex-none block flex-row justify-between md:gap-7 lg:gap-9 items-center cursor-pointer">
           <Links to="/" title={"Home"} />
-          <Links to="/about-us" title={"About"} />
-          <Links to="/projects" title={"Our Projects"} />
+          <Links to="/about-us" title={"About us"} />
+          <Links to="/our-team" title={"Our Team"} />
           <Links to="/blog" title={"Blog"} />
           <Links to="/contact-us" title={"Contact us"} />
           <Link to="/donate">

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-import Pic17 from "../assets/image/pic-17.png";
+import Pic31 from "../assets/image/pic-31.png";
 import Pic24 from "../assets/image/pic-24.png";
 import NewsLetter from "../components/NewsLetter";
 import {
@@ -15,10 +15,13 @@ import {
 import { GrMail } from "react-icons/gr";
 
 const Contact = () => {
+     useEffect(() => {
+       window.scrollTo(0, 0);
+     }, []);
   return (
     <>
       <Header />
-      <Banner image={Pic17} text={"CONTACT US"} />
+      <Banner image={Pic31} text={"CONTACT US"} />
       <section className="px-4 md:px-8 mt-10 md:mt-20">
         <h2 className="text-2xl lg:text-3xl text-center md:text-left">
           Get in Touch
@@ -93,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <NewsLetter />
+      <NewsLetter leaveSpace={true} />
       <Footer />
     </>
   );

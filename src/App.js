@@ -10,6 +10,7 @@ import GetInvolved from "./pages/GetInvolved";
 import GetInvolvedForm from "./pages/GetInvolvedForm";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import OurTeam from "./pages/OurTeam";
 
 const App = () => {
   const [display, setDisplay] = useState("none");
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/get-involved/form" element={<GetInvolvedForm />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/our-team" element={<OurTeam />} />
         </Routes>
       </div>
       <ToastContainer />

@@ -8,7 +8,7 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
-import "../scss/Navigate.scss";
+import "../scss/styles.scss";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,7 +32,9 @@ const Footer = () => {
             <p>Events</p>
             <p>Projects</p>
             <p>Apply</p>
-            <p>Meet our team</p>
+            <Link to="/our-team">
+              <p>Meet our team</p>
+            </Link>
           </div>
           <div>
             <h4>Contact</h4>

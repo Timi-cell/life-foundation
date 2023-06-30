@@ -34,22 +34,21 @@ const Blog = () => {
             className="w-full h-full md:w-1/2"
           />
           <div className="w-full md:w-1/2">
-            <div className="flex flex-row justify-start items-center gap-2">
-              <button className="p-2 text-base bg-blue-700 text-white rounded-md">
-                Education
+            {/* <div className="flex flex-row justify-start items-center gap-2"> */}
+              <button className="p-2 text-base bg-blue-800 cursor-default text-white rounded-md">
+               27th March, 2023
               </button>
-              <p className="text-gray-600">•</p>
+              {/* <p className="text-gray-600">•</p>
               <p className="text-gray-600">27th March, 2023</p>
-            </div>
+            </div> */}
             <h3 className="text-xl md:text-2xl lg:text-3xl mt-3">
-              Impacting lives through <br /> scholarships for the younger
-              generation.
+              Impacting lives through scholarships support
             </h3>
-            <p className="mt-3 text-sm text-gray-600">
+            <p className="mt-3 text-sm">
               Our work so far from different perspectives and words from
-              volunteers on a life changing trip.
+              volunteers on a life changing encounter.
             </p>
-            <p className="text-xs mt-1">
+            <p className="text-xs text-gray-600 mt-3">
               by LIFE Foundation Admin | 6 mins read
             </p>
           </div>
@@ -106,7 +105,7 @@ const Blog = () => {
           image={Pic29}
         />
       </section>
-      <NewsLetter />
+      <NewsLetter leaveSpace={true} />
       <Footer />
     </>
   );

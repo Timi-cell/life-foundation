@@ -48,8 +48,8 @@ const GetInvolved = () => {
         />
       </section>
       {/* Fill the form */}
-      <section className="my-10 md:my-20">
-        <div className="text-center p-8 md:p-10 bg-blue-800 h-full w-full">
+      <section className="mt-10 md:mt-20">
+        <div className="text-center px-8 md:px-10 py-10 md:py-20 bg-blue-800 h-full w-full">
           <h2 className="text-xl md:text-2xl text-white">
             To show interest, fill the form and get involved today in our
             mission of saving lives.
@@ -61,7 +61,7 @@ const GetInvolved = () => {
           </Link>
         </div>
       </section>
-      <NewsLetter />
+      <NewsLetter leaveSpace={false} />
       <Footer />
     </>
   );

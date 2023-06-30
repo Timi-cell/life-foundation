@@ -28,11 +28,11 @@ const About = () => {
     <>
       <Header />
       {/* Banner */}
-      <section className="relative">
+      <section className="relative mt-20">
         <img
           src={Pic11}
           alt="desktop about-us pic"
-          className="w-full h-full hidden md:block"
+          className="w-full h-[32rem] hidden md:block"
         />
         <div className="w-full h-60 block md:hidden">
           <img
@@ -111,16 +111,16 @@ const About = () => {
             hopeless, the less privileged, and the downtrodden in society.
           </p>
         </div>
-        <div className="grid grid-rows-1 lg:grid-rows-3 grid-cols-1 lg:grid-cols-2 gap-3">
+        <div className="grid grid-rows-1 sm:grid-cols-3 sm:grid-rows-2 md:grid-rows-3 grid-cols-1 md:grid-cols-2 gap-3">
           <Badge text={"Identify and address challenges"} />
           <Badge text={"Save as many young people"} />
-          <Badge text={"Support the disabled"} />
-          <Badge text={"Help students in low-income"} />
+          <Badge text={"Supporting the disabled"} />
+          <Badge text={"Help students in low-income home"} />
           <Badge text={"Involve in Community outreach"} />
-          <Badge text={"Involve in Community outreach"} />
+          <Badge text={"Provide medical care to populace"} />
         </div>
       </section>
-      <NewsLetter />
+      <NewsLetter leaveSpace={false}/>
       <Footer />
     </>
   );

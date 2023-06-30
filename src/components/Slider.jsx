@@ -30,7 +30,7 @@ const ImageText = ({ imgAlt, imgSrc, heading, text1, text2 }) => {
 
 const Slider = () => {
   return (
-    <section className="md:h-96 lg:h-[32rem] h-80 slider text-white overflow-hidden">
+    <section className="md:h-96 lg:h-[32rem] h-80 slider text-white overflow-hidden md:mt-20 mt-24">
       <Carousel slideInterval={3000}>
         <ImageText
           imgAlt="block-1"

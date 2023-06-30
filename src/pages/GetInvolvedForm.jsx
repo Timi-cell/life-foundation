@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
 import Pic17 from "../assets/image/pic-17.png";
 import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
 const GetInvolvedForm = () => {
   useEffect(() => {
@@ -85,14 +86,18 @@ const GetInvolvedForm = () => {
               <label htmlFor="part">Partner with us</label>
               <input type="checkbox" id="part" />
             </div>
-            <p className="cursor-pointer underline">Donate today</p>
+            <Link to="/donate">
+              <p className="cursor-pointer underline text-gray-600 hover:text-black">
+                Donate today
+              </p>
+            </Link>
           </div>
           <button className="px-5 py-4 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md">
             Submit
           </button>
         </form>
       </section>
-      <NewsLetter />
+      <NewsLetter leaveSpace={true} />
       <Footer />
     </>
   );
