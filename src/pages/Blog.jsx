@@ -35,9 +35,9 @@ const Blog = () => {
           />
           <div className="w-full md:w-1/2">
             {/* <div className="flex flex-row justify-start items-center gap-2"> */}
-              <button className="p-2 text-base bg-blue-800 cursor-default text-white rounded-md">
+              <div className="p-2 text-base w-max bg-blue-800 cursor-default text-white rounded-md">
                27th March, 2023
-              </button>
+              </div>
               {/* <p className="text-gray-600">•</p>
               <p className="text-gray-600">27th March, 2023</p>
             </div> */}

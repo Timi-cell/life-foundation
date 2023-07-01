@@ -14,8 +14,8 @@ export const ImageBlock = ({ image, heading, text }) => {
       <img className="h-full w-full" src={image} alt={heading} />
       <div className="bg-gradient-to-t from-black h-full w-full absolute top-0">
         <div className="absolute bottom-2 left-2/4 -translate-y-1/2 -translate-x-1/2 mt-2 text-white w-full px-4">
-          <h3 className="lg:text-lg text-sm sm:text-base">{heading}</h3>
-          <p className="mt-2 text-base">{text}</p>
+          <h3 className="lg:text-lg text-base sm:text-sm">{heading}</h3>
+          <p className="mt-2 text-base sm:text-sm">{text}</p>
         </div>
       </div>
     </div>
