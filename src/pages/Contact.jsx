@@ -15,19 +15,19 @@ import {
 import { GrMail } from "react-icons/gr";
 
 const Contact = () => {
-     useEffect(() => {
-       window.scrollTo(0, 0);
-     }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
       <Banner image={Pic31} text={"CONTACT US"} />
       <section className="px-4 md:px-8 mt-10 md:mt-20">
-        <h2 className="text-2xl lg:text-3xl text-center md:text-left">
-          Get in Touch
-        </h2>
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 items-start md:items-center justify-between mt-4">
-          <form className="mt-4 w-full md:w-1/2">
+          <form className="w-full md:w-1/2">
+            <h2 className="text-2xl lg:text-3xl mb-8 text-center md:text-left">
+              Get in Touch
+            </h2>
             <div>
               <label htmlFor="name">Full Name</label>
               <input
@@ -58,7 +58,7 @@ const Contact = () => {
                 className="w-full block mt-4 rounded-lg placeholder:text-gray-600"
               ></textarea>
             </div>
-            <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md">
+            <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
               Submit
             </button>
           </form>
@@ -76,8 +76,8 @@ const Contact = () => {
                   </div>
                   <div className="flex mt-4 flex-row flex-wrap gap-2 items-center">
                     <GrMail size={22} color="#fff" />
-                    <a href="mailto:Livinginfullexpression1@gmail.com">
-                      Livinginfullexpression1@gmail.com
+                    <a href="mailto:livinginfullexpression1@gmail.com">
+                      livinginfullexpression1@gmail.com
                     </a>
                   </div>
                 </>

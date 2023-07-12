@@ -62,15 +62,22 @@ const GetInvolvedForm = () => {
               Phone Number <sup>*</sup>
             </label>
             <div className="w-full md:w-1/2 mt-4 flex flex-row items-center justify-between gap-3">
-              <input
+              {/* <input
                 type="number"
-                placeholder="+234"
+                placeholder="+234" 
                 className="w-20 block rounded-lg placeholder:text-gray-600"
                 required
-              />
+              /> */}
+              <select className="w-28 block rounded-lg placeholder:text-gray-600">
+              TODO:
+                {/* <option value="">Code</option> */}
+                <option value="+234">+234</option>
+                {/* <option value="+44">+44</option> */}
+              </select>
               <input
                 type="number"
                 id="phone"
+                min="0"
                 placeholder="Phone No."
                 className="w-full block rounded-lg placeholder:text-gray-600"
                 required

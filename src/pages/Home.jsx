@@ -127,7 +127,7 @@ const Home = () => {
       {/* Outreach report */}
       <section className="flex px-4 md:px-8 lg:items-center sm:items-start flex-col lg:flex-row justify-between mt-20 gap-8 lg:gap-40">
         <div>
-          <h2 className="text-xl sm:text-2xl lg:text-left md:text-3xl text-center">
+          <h2 className="text-xl sm:text-2xl text-left md:text-3xl">
             2022 Outreach Report
           </h2>
           <p className="mt-5 leading-7 lg:text-lg text-sm sm:text-base">
@@ -170,6 +170,7 @@ const Home = () => {
                 "Giving the young people a platform to build their intellect and skills, and building them ready for a higher level. So far, we have begun 2 cohorts in..."
               }
               image={Pic18}
+              blogLink={"/blog/1"}
             />
             <BlogBlock
               date={"9th April"}

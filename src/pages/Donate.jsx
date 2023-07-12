@@ -7,6 +7,7 @@ import Pic25 from "../assets/image/pic-25.png";
 import Banner from "../components/Banner";
 import { FlexBlock } from "../components/Blocks";
 
+
 const PriceTag = ({ price }) => {
   return (
     <p className="py-4 px-8 bg-gray-300 rounded-md cursor-pointer text-center lg:text-lg text-sm sm:text-base">
@@ -35,8 +36,8 @@ const Donate = () => {
           reverse={false}
         />
       </section>
-      <section className="px-4 md:px-8 flex flex-row justify-center items-center">
-        <div className="flex w-[32rem] md:w-1/2 mt-10 md:mt-20 flex-col items-center justify-between gap-4 py-4 md:px-8 px-4 bg-gray-200 rounded-md text-center">
+      <section className="px-4 md:px-8 flex flex-col justify-between gap-8 items-center">
+        <div className="flex w-full md:w-1/2 mt-10 md:mt-20 flex-col items-center justify-between gap-4 py-4 md:px-8 px-4 bg-gray-200 rounded-md text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl">
             Supporting LIFE Foundation
           </h2>
@@ -90,8 +91,52 @@ const Donate = () => {
             />
           </div>
           <button className="p-2 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white border-2 border-yellow-300 rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500 w-full">
-           Proceed
+            Proceed
           </button>
+        </div>
+        <div className="w-full md:w-1/2">
+          <h3 className="text-base md:text-xl">Personal Details</h3>
+          <form>
+            <div className="mt-4">
+              <label htmlFor="name" className="text-gray-500">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
+                required
+              />
+            </div>
+            <div className="mt-4">
+              <label htmlFor="email" className="text-gray-500">
+                E-mail Address *
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
+                required
+              />
+            </div>
+            <div className="mt-4">
+              <label htmlFor="comment" className="text-gray-500">
+                Comment
+              </label>
+              <textarea
+                id="comment"
+                cols="20"
+                rows="5"
+                placeholder="Leave a comment..."
+                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
+              ></textarea>
+            </div>
+            <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
+              Submit
+            </button>
+          </form>
         </div>
       </section>
       <NewsLetter leaveSpace={true} />

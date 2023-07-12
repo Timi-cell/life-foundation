@@ -7,9 +7,9 @@ import Pic16 from "../assets/image/pic-16.png";
 import Pic18 from "../assets/image/pic-18.png";
 import Pic19 from "../assets/image/pic-19.png";
 import Pic20 from "../assets/image/pic-20.png";
-import Pic26 from "../assets/image/pic-26.png";
-import Pic28 from "../assets/image/pic-28.png";
-import Pic29 from "../assets/image/pic-29.png";
+// import Pic26 from "../assets/image/pic-26.png";
+// import Pic28 from "../assets/image/pic-28.png";
+// import Pic29 from "../assets/image/pic-29.png";
 import { BlogBlock } from "../components/Blocks";
 import Banner from "../components/Banner";
 
@@ -55,7 +55,7 @@ const Blog = () => {
         </div>
       </section>
       {/* Blogs list */}
-      <section className="grid mt-10 md:mt-20 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 lg:grid-rows-2 lg:grid-cols-3 gap-x-4 gap-y-6 px-4 md:px-8">
+      <section className="grid mt-10 md:mt-20 md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-x-4 gap-y-6 px-4 md:px-8">
         <BlogBlock
           date={"2nd April"}
           heading={"Empowering the young generation"}
@@ -63,6 +63,7 @@ const Blog = () => {
             "Giving the young people a platform to build their intellect and skills, and building them ready for a higher level. So far, we have begun 2 cohorts in..."
           }
           image={Pic18}
+          blogLink={"/blog/1"}
         />
         <BlogBlock
           date={"9th April"}
@@ -80,7 +81,7 @@ const Blog = () => {
           }
           image={Pic20}
         />
-        <BlogBlock
+        {/* <BlogBlock
           date={"23rd April"}
           heading={"The roles of Non-profits in Education"}
           text={
@@ -103,7 +104,7 @@ const Blog = () => {
             "Volunteering in NGO’s is a vital force that fuels their mission, as dedicated individuals contribute their time, skills, and passion to address societal needs..."
           }
           image={Pic29}
-        />
+        /> */}
       </section>
       <NewsLetter leaveSpace={true} />
       <Footer />

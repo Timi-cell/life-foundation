@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between gap-16 items-start footer-text">
-          <div>
+          {/* <div>
             <h4>Resources</h4>
             <p>Events</p>
             <p>Projects</p>
@@ -35,7 +35,7 @@ const Footer = () => {
             <Link to="/our-team">
               <p>Meet our team</p>
             </Link>
-          </div>
+          </div> */}
           <div>
             <h4>Contact</h4>
             <div className="flex flex-row mt-4 gap-2 items-center flex-wrap">
@@ -45,18 +45,34 @@ const Footer = () => {
             </div>
             <div className="flex mt-4 flex-row gap-2 items-center flex-wrap">
               <GrMail size={20} color="#02319D" />
-              <a href="mailto:Livinginfullexpression1@gmail.com">
-                Livinginfullexpression1@gmail.com
+              <a href="mailto:livinginfullexpression1@gmail.com">
+                livinginfullexpression1@gmail.com
               </a>
             </div>
           </div>
           <div>
             <h4>Follow us</h4>
             <div className="flex flex-row gap-6 justify-center mt-4 items-center cursor-pointer">
-              <BsFacebook size={20} color="#02319D" />
-              <BsTwitter size={20} color="#02319D" />
-              <BsInstagram size={20} color="#02319D" />
-              <BsLinkedin size={20} color="#02319D" />
+              <BsFacebook
+                size={20}
+                color="#02319D"
+              
+              />
+              <BsTwitter
+                size={20}
+                color="#02319D"
+              
+              />
+              <BsInstagram
+                size={20}
+                color="#02319D"
+              
+              />
+              <BsLinkedin
+                size={20}
+                color="#02319D"
+              
+              />
             </div>
           </div>
         </div>
