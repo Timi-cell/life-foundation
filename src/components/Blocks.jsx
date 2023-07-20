@@ -83,8 +83,12 @@ export const FlexBlock = ({ image, heading, text, reverse }) => {
 
 export const TeamMemberBlock = ({ image, name, bio, marginT }) => {
   return (
-    <div className={`bg-white p-5 flex flex-col md:flex-row justify-content items-start gap-4 md:gap-8 rounded-lg ${marginT ? "mt-10": ""}`}>
-      <div className="h-full w-72">
+    <div
+      className={`bg-white p-5 flex flex-col md:flex-row justify-content items-start gap-4 md:gap-8 rounded-lg ${
+        marginT ? "mt-10" : ""
+      }`}
+    >
+      <div className="h-full w-full md:w-72">
         <img src={image} alt={name} className="w-full h-full" />
       </div>
       <div className="md:w-3/5 w-full">
@@ -94,5 +98,87 @@ export const TeamMemberBlock = ({ image, name, bio, marginT }) => {
         </p>
       </div>
     </div>
+  );
+};
+
+export const BlogsPostBlock = ({
+  image1,
+  smallTitle,
+  title,
+  date,
+  text1,
+  image2,
+  image3,
+  text2,
+}) => {
+  return (
+    <section className="mt-32 px-4 md:px-8 mb-8">
+      <div className="flex flex-row gap-4 items-start justify-start">
+        <p>Home</p>
+        <p>&gt;</p>
+        <p>Blog</p>
+        <p>&gt;</p>
+        <p>{smallTitle}</p>
+      </div>
+      <div className="md:w-[32rem] w-full mt-10">
+        <img
+          src={image1}
+          alt="smallTitle"
+          className="w-full h-full md:h-[378px]"
+        />
+      </div>
+      <h1 className="mt-5 text-2xl sm:text-3xl">{title}</h1>
+      <div className="flex flex-col justify-start items-start gap-5">
+        <p className="mt-3 md:w-3/4 w-full">{text1}</p>
+        <div class="flex flex-col md:flex-row gap-5 items-center justify-between">
+          <div className="md:w-1/2 w-full">
+            <img src={image2} alt="image2" className="w-full" />
+          </div>
+          <div className="md:w-1/2 w-full">
+            <img src={image3} alt="image3" className="w-full" />
+          </div>
+        </div>
+        <p className="mt-3 md:w-3/4 w-full">{text2}</p>
+        <form className="w-full md:w-1/2">
+            <h2 className="text-2xl lg:text-3xl text-left">
+             Post a comment
+            </h2>
+            <p className="mt-1">Your email address will not be published</p>
+            <div className="mt-4">
+              <label htmlFor="comment">Comment*</label>
+              <textarea
+                id="comment"
+                cols="20"
+                 required
+                rows="5"
+                className="w-full block mt-1 rounded-lg placeholder:text-gray-600"
+              ></textarea>
+            </div>
+            <div className="flex flex-col mt-4 md:flex-row justify-start items-start gap-4">
+              <div className="w-full md:w-1/2">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full block mt-1 rounded-lg placeholder:text-gray-600"
+                  required
+                />
+              </div>
+              <div className="w-full md:w-1/2">
+                <label htmlFor="email">E-mail Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full block mt-1 rounded-lg placeholder:text-gray-600"
+                  required
+                />
+              </div>
+            </div>
+            <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
+             Post
+            </button>
+          </form>
+      </div>
+    </section>
   );
 };
