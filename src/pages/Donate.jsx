@@ -94,50 +94,6 @@ const Donate = () => {
             Proceed
           </button>
         </div>
-        <div className="w-full md:w-1/2">
-          <h3 className="text-base md:text-xl">Personal Details</h3>
-          <form>
-            <div className="mt-4">
-              <label htmlFor="name" className="text-gray-500">
-                Full Name *
-              </label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
-                required
-              />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="email" className="text-gray-500">
-                E-mail Address *
-              </label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
-                required
-              />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="comment" className="text-gray-500">
-                Comment
-              </label>
-              <textarea
-                id="comment"
-                cols="20"
-                rows="5"
-                placeholder="Leave a comment..."
-                className="w-full block mt-4 rounded-lg placeholder:text-gray-500"
-              ></textarea>
-            </div>
-            <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
-              Submit
-            </button>
-          </form>
-        </div>
       </section>
       <NewsLetter leaveSpace={true} />
       <Footer />
