@@ -30,13 +30,12 @@ const OurTeam = () => {
           marginT={true}
         />
 
-          <TeamMemberBlock
+        <TeamMemberBlock
           image={Pic39}
           name={"Comfort Adegbola"}
           bio={`Comfort Adegbola is a medical doctor by training and a teenager's mentor at heart. She is the co-founder of the LIFE foundation and has passionately pursued her passion for empowering lives. Comfort graduated from the University of Ibadan medical school and practiced in the university health system in Kogi state before relocating to Canada. She is a mother, a doctor, a mentor, a fashion designer, a tutor, and much more.`}
           marginT={true}
         />
-
 
         <TeamMemberBlock
           image={Pic34}
@@ -49,7 +48,7 @@ He is skilled at data analysis. His hobbies are reading and video editing.`}
           marginT={true}
         />
 
-<TeamMemberBlock
+        <TeamMemberBlock
           image={Pic35}
           name={"Abubakar Morenike"}
           bio={`Abubakar Morenike Marian is a graduate of Federal University Lokoja, with a bachelors degree in History and International Studies. She is a skilled fashion designer, a writer and a digital creator.
@@ -60,7 +59,7 @@ Her hobbies are photography and reading.`}
           marginT={true}
         />
 
-<TeamMemberBlock
+        <TeamMemberBlock
           image={Pic36}
           name={"Rhoda Adeboboye"}
           bio={`Rhoda Adeboboye is a graduate of Ahmadu Bello  University. She studied English Language Education.
@@ -73,7 +72,7 @@ Her hobbies are singing, reading, meeting the needs of less privileged especiall
           marginT={true}
         />
 
-<TeamMemberBlock
+        <TeamMemberBlock
           image={Pic37}
           name={"Adams Adeiza Matthew"}
           bio={`Adams Adeiza Matthew (KENT) is a graduate of political science from the Federal University Lokoja, and he is passionate about leadership, community development, and talent development. He has demonstrated his leadership skills on various platforms, showcasing his dedication to making a positive impact.
@@ -82,7 +81,7 @@ His passion for empowering young leaders, promoting gender equality, and utilizi
           marginT={true}
         />
 
-<TeamMemberBlock
+        <TeamMemberBlock
           image={Pic38}
           name={"Boboye Gabriel"}
           bio={`Boboye Gabriel is a graduate of Guidance & Counseling/Political Science from the University of Ibadan. A specialist in Special Education for the Gifted & Talented from the Federal College of Education(Special).
@@ -92,19 +91,15 @@ His hobbies are writing, reading, and preaching the Gospel of Christ.`}
           marginT={true}
         />
 
-
-
-<TeamMemberBlock
+        <TeamMemberBlock
           image={Pic40}
           name={"Olumide Damilare Yusuf"}
           bio={`Olumide Damilare Yusuf is a final year student of English and Literary Studies in Federal University Lokoja. Enthusiastic about the spiritual growth of teenagers. The teenage years are marked with wonderful experiences but delicate stage with slippery steps.
 He was involved in teenage conferences as a coordinator organized by his church. The conference is aimed at equipping teenagers on how to stay guarded about their social life balanced with their spiritual life. He is a writer. His hobbies are writing, reading and playing football.`}
           marginT={true}
         />
-
-
       </section>
-      <NewsLetter leaveSpace={true}/>
+      <NewsLetter leaveSpace={true} />
       <Footer />
     </div>
   );
