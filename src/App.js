@@ -11,7 +11,8 @@ import GetInvolvedForm from "./pages/GetInvolvedForm";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import OurTeam from "./pages/OurTeam";
-import BlogPost from "./pages/BlogPost";
+import BlogPost1 from "./pages/BlogPost1";
+import BlogPost2 from "./pages/BlogPost2";
 
 const App = () => {
   const [display, setDisplay] = useState("none");
@@ -48,7 +49,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/1" element={<BlogPost />} />
+          <Route path="/blog/1" element={<BlogPost1 />} />
+          <Route path="/blog/2" element={<BlogPost2 />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/get-involved/form" element={<GetInvolvedForm />} />

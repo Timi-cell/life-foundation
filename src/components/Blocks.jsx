@@ -109,14 +109,20 @@ export const BlogsPostBlock = ({
   text1,
   image2,
   image3,
+  image4,
+  image5,
   text2,
 }) => {
   return (
     <section className="mt-32 px-4 md:px-8 mb-8">
       <div className="flex flex-row gap-4 items-start justify-start">
-        <p>Home</p>
+        <Link to={"/"}>
+          <p>Home</p>
+        </Link>
         <p>&gt;</p>
-        <p>Blog</p>
+        <Link to={"/blog"}>
+          <p>Blog</p>
+        </Link>
         <p>&gt;</p>
         <p>{smallTitle}</p>
       </div>
@@ -129,17 +135,25 @@ export const BlogsPostBlock = ({
       </div>
       <h1 className="mt-5 text-2xl sm:text-3xl">{title}</h1>
       <div className="flex flex-col justify-start items-start gap-5">
-        <p className="mt-3 md:w-3/4 w-full">{text1}</p>
+        <p className="mt-3 md:w-3/4 w-full break-words">{text1}</p>
         <div class="flex flex-col md:flex-row gap-5 items-center justify-between">
           <div className="md:w-1/2 w-full">
             <img src={image2} alt="image2" className="w-full" />
           </div>
           <div className="md:w-1/2 w-full">
             <img src={image3} alt="image3" className="w-full" />
-          </div>
+          </div>  
         </div>
-        <p className="mt-3 md:w-3/4 w-full">{text2}</p>
-        <form className="w-full md:w-1/2">
+        <p className="mt-3 md:w-3/4 w-full break-words">{text2}</p>
+       {image4 && image5 ?  <div class="flex flex-col md:flex-row gap-5 items-center justify-between">
+        <div className="md:w-1/2 w-full">
+            <img src={image4} alt="image3" className="w-full" />
+          </div>
+          <div className="md:w-1/2 w-full">
+            <img src={image5} alt="image3" className="w-full" />
+          </div>
+          </div> : ""}
+        {/* <form className="w-full md:w-1/2">
             <h2 className="text-2xl lg:text-3xl text-left">
              Post a comment
             </h2>
@@ -177,7 +191,7 @@ export const BlogsPostBlock = ({
             <button className="px-6 py-3 mt-4 lg:text-lg text-sm sm:text-base bg-yellow-300 text-white rounded-md transition-all delay-100 ease-in hover:bg-yellow-400  hover:border-yellow-400 focus:bg-yellow-500 focus:border-yellow-500">
              Post
             </button>
-          </form>
+          </form> */}
       </div>
     </section>
   );
