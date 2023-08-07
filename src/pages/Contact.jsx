@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
@@ -13,18 +13,46 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    try {
+      emailjs
+        .sendForm(
+          "service_dxryc5p",
+          "template_ygb7q8m",
+          form.current,
+          "XsjzN-uoi1xrSwWPL"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      toast.error("Message not sent!. Please try again!");
+    }
+  };
   return (
     <>
       <Header />
       <Banner image={Pic31} text={"CONTACT US"} />
       <section className="px-4 md:px-8 mt-10 md:mt-20">
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 items-start md:items-center justify-between mt-4">
-          <form className="w-full md:w-1/2">
+          <form className="w-full md:w-1/2" ref={form} onSubmit={sendEmail}>
             <h2 className="text-2xl lg:text-3xl mb-8 text-center md:text-left">
               Get in Touch
             </h2>
@@ -34,6 +62,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 placeholder="Name"
+                name="user_name"
                 className="w-full block mt-4 rounded-lg placeholder:text-gray-600"
                 required
               />
@@ -44,6 +73,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 placeholder="Email"
+                name="user_email"
                 className="w-full block mt-4 rounded-lg placeholder:text-gray-600"
                 required
               />
@@ -54,6 +84,7 @@ const Contact = () => {
                 id="message"
                 cols="20"
                 rows="5"
+                name="message"
                 placeholder="Type a message..."
                 className="w-full block mt-4 rounded-lg placeholder:text-gray-600"
               ></textarea>
