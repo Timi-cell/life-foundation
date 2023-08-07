@@ -53,26 +53,22 @@ const Footer = () => {
           <div>
             <h4>Follow us</h4>
             <div className="flex flex-row gap-6 justify-center mt-4 items-center cursor-pointer">
-              <BsFacebook
-                size={20}
-                color="#02319D"
-              
-              />
-              <BsTwitter
-                size={20}
-                color="#02319D"
-              
-              />
-              <BsInstagram
-                size={20}
-                color="#02319D"
-              
-              />
-              <BsLinkedin
-                size={20}
-                color="#02319D"
-              
-              />
+              <BsFacebook size={20} color="#02319D" />
+              <a
+                href="https:/www.threads.net/@livinginfullexpression"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BsTwitter size={20} color="#02319D" />
+              </a>
+              <a
+                target="_blank"
+                href="https://instagram.com/livinginfullexpression?igshid=MjEwN2lyYWYwYw=="
+                rel="noreferrer"
+              >
+                <BsInstagram size={20} color="#02319D" />
+              </a>
+              <BsLinkedin size={20} color="#02319D" />
             </div>
           </div>
         </div>
