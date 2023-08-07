@@ -5,6 +5,8 @@ import { BlogsPostBlock } from "../components/Blocks";
 import Pic45 from "../assets/image/pic-45.png";
 import Pic43 from "../assets/image/pic-43.png";
 import Pic44 from "../assets/image/pic-44.png";
+import Pic46 from "../assets/image/pic-46.png"; 
+import Pic47 from "../assets/image/pic-47.png"; 
 import NewsLetter from "../components/NewsLetter";
 
 const BlogPost2 = () => {
@@ -21,7 +23,7 @@ const BlogPost2 = () => {
      text1 = {`On the 16th of December 2022, Living In Full Expression Foundation embarked on a significant outreach to various secondary schools in Lokoja, Kogi State. The primary objective of this outreach was to extend scholarships to deserving students. The schools visited were GYB Model Science School, Crowther Memorial College, Muslim Community Secondary School, and Bishop Delise School.`}
 
      image2={Pic43}
-     image3={Pic44}
+     image3={Pic47}
 
      text2 = {`Before the outreach, the Foundation had engaged with four schools, conducting interviews to select eleven students for the scholarship program. These lucky recipients would have their SSCE (WAEC) fees fully covered. Among the beneficiaries, two students from GYB Model Science School were awarded scholarships: Ebute Marvellous and Joseph Favour. Additionally, Crowther Memorial College had four recipients: Ajiboye Favour, Folorunsho Samuel, Noah Sarah, and Daniel Juliana. Muslim Community School saw the scholarship granted to Ejikeme Divine Favour and Musa Mohammed, while Bishop Delise School had three deserving students named Akubo Abigail, Joseph Agah, and Ayodele Esther.
 
@@ -33,7 +35,7 @@ In conclusion, the outreach by Living In Full Expression Foundation was a resoun
 
 `}
 
-     image4={Pic43}
+     image4={Pic46}
      image5={Pic44}
 
     
