@@ -71,7 +71,8 @@ const Blog = () => {
           text={
             "We believe we have the extraordinary power to transform lives, as we tirelessly work towards providing support, and empowering individuals in need..."
           }
-          image={Pic19}
+              blogLink={"/blog/2"}
+          image={Pic19} 
         />
         <BlogBlock
           date={"16th April"}

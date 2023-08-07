@@ -7,7 +7,7 @@ import Pic41 from "../assets/image/pic-41.png";
 import Pic42 from "../assets/image/pic-42.png";
 import NewsLetter from "../components/NewsLetter";
 
-const BlogPost = () => {
+const BlogPost1 = () => {
    useEffect(() => {
      window.scrollTo(0, 0);
    }, []);
@@ -32,6 +32,7 @@ const BlogPost = () => {
     
      />
      
+     
     <NewsLetter />
 
       <Footer />
@@ -39,4 +40,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default BlogPost1;
